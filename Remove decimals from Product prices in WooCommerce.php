@@ -1,3 +1,4 @@
+<?php 
 /**
  * Remove decimals from Product prices in WooCommerce
  * @author Dhiren Patel

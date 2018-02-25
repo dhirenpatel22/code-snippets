@@ -1,3 +1,4 @@
+<?php 
 /**
  * This function modifies the main WordPress query and includes an array of 
  * post types instead of the default 'post' and 'page' post type.
