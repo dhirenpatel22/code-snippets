@@ -1,3 +1,4 @@
+<?php 
 /**
  * Display a Read More link in WordPress Excerpts
  * @author Dhiren Patel

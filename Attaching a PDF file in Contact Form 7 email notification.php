@@ -1,3 +1,4 @@
+<?php 
 /**
  * Attaching a PDF file in Contact Form 7 email notification
  * @author Dhiren Patel

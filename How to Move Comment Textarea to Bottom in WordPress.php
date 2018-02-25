@@ -1,3 +1,4 @@
+<?php 
 /**
  * How to Move Comment Textarea to Bottom in WordPress
  * @author Dhiren Patel
