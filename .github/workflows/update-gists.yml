@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ✅ Fixes Node.js deprecation warning
+
 jobs:
   update-gist-index:
     runs-on: ubuntu-latest
@@ -14,56 +17,58 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4          # ✅ Updated from v3 to v4
+        uses: actions/checkout@v4
 
       - name: Fetch Gists and Update README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: |
-          # Fetch all gists from GitHub API
-          RESPONSE=$(curl -s \
+          # Fetch gists using curl and save raw response
+          curl -s \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/users/$USERNAME/gists?per_page=100")
+            "https://api.github.com/users/$USERNAME/gists?per_page=100" \
+            -o gists.json
 
-          # ✅ Debug: Check if API response is valid
-          echo "$RESPONSE" | jq . > /dev/null 2>&1
-          if [ $? -ne 0 ]; then
-            echo "❌ Failed to parse API response"
-            echo "$RESPONSE"
-            exit 1
-          fi
+          echo "✅ Gists fetched. Generating README..."
 
-          echo "$RESPONSE" > gists.json
+          # ✅ Use Python instead of jq — more reliable on all runners
+          python3 << 'EOF'
+import json
+from datetime import datetime, timezone
 
-          # ✅ Check if gists exist
-          GIST_COUNT=$(echo "$RESPONSE" | jq 'length')
-          echo "Found $GIST_COUNT gists"
+with open("gists.json", "r") as f:
+    gists = json.load(f)
 
-          # Generate README.md header
-          echo "# 📋 My Gist Index" > README.md
-          echo "" >> README.md
-          echo "> Auto-updated daily via GitHub Actions" >> README.md
-          echo "" >> README.md
+lines = []
+lines.append("# 📋 My Gist Index\n")
+lines.append("> Auto-updated daily via GitHub Actions\n")
+lines.append("")
 
-          if [ "$GIST_COUNT" -eq 0 ]; then
-            echo "_No gists found._" >> README.md
-          else
-            echo "| # | Description | Files | Last Updated |" >> README.md
-            echo "|---|-------------|-------|--------------|" >> README.md
+if not gists:
+    lines.append("_No public gists found._\n")
+else:
+    lines.append(f"**Total Gists: {len(gists)}**\n")
+    lines.append("| # | Description | Files | Last Updated |")
+    lines.append("|---|-------------|-------|--------------|")
 
-            # ✅ Fixed jq filter with proper null handling
-            echo "$RESPONSE" | jq -r '
-              to_entries[] |
-              .key as $i |
-              .value |
-              "| \($i + 1) | [\(if .description == null or .description == "" then "Untitled" else .description end)](\(.html_url)) | \([.files | keys[] ] | join(", ")) | \(.updated_at[:10]) |"
-            ' >> README.md
-          fi
+    for i, gist in enumerate(gists, 1):
+        description = gist.get("description") or "Untitled"
+        url = gist.get("html_url", "")
+        files = ", ".join(gist.get("files", {}).keys())
+        updated = gist.get("updated_at", "")[:10]
+        lines.append(f"| {i} | [{description}]({url}) | {files} | {updated} |")
 
-          echo "" >> README.md
-          echo "_Last synced: $(date -u '+%Y-%m-%d %H:%M UTC')_" >> README.md
+now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+lines.append("")
+lines.append(f"_Last synced: {now}_")
+
+with open("README.md", "w") as f:
+    f.write("\n".join(lines))
+
+print(f"✅ README.md generated with {len(gists)} gists.")
+EOF
 
       - name: Commit and Push Changes
         run: |
