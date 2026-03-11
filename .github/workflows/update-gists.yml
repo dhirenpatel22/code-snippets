@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # ✅ Fixes Node.js deprecation warning
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   update-gist-index:
@@ -19,61 +19,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch Gists and Update README
+      - name: Fetch Gists from GitHub API
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         run: |
-          # Fetch gists using curl and save raw response
           curl -s \
             -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/users/$USERNAME/gists?per_page=100" \
             -o gists.json
+          echo "Gists fetched successfully"
 
-          echo "✅ Gists fetched. Generating README..."
-
-          # ✅ Use Python instead of jq — more reliable on all runners
-          python3 << 'EOF'
-import json
-from datetime import datetime, timezone
-
-with open("gists.json", "r") as f:
-    gists = json.load(f)
-
-lines = []
-lines.append("# 📋 My Gist Index\n")
-lines.append("> Auto-updated daily via GitHub Actions\n")
-lines.append("")
-
-if not gists:
-    lines.append("_No public gists found._\n")
-else:
-    lines.append(f"**Total Gists: {len(gists)}**\n")
-    lines.append("| # | Description | Files | Last Updated |")
-    lines.append("|---|-------------|-------|--------------|")
-
-    for i, gist in enumerate(gists, 1):
-        description = gist.get("description") or "Untitled"
-        url = gist.get("html_url", "")
-        files = ", ".join(gist.get("files", {}).keys())
-        updated = gist.get("updated_at", "")[:10]
-        lines.append(f"| {i} | [{description}]({url}) | {files} | {updated} |")
-
-now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-lines.append("")
-lines.append(f"_Last synced: {now}_")
-
-with open("README.md", "w") as f:
-    f.write("\n".join(lines))
-
-print(f"✅ README.md generated with {len(gists)} gists.")
-EOF
+      - name: Generate README from Gists
+        run: python3 .github/scripts/generate_readme.py
 
       - name: Commit and Push Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md gists.json
-          git diff --cached --quiet || git commit -m "🔄 Update gist index - $(date -u '+%Y-%m-%d')"
+          git diff --cached --quiet || git commit -m "Update gist index - $(date -u '+%Y-%m-%d')"
           git push
