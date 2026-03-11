@@ -2,8 +2,8 @@ name: Update Gist Index
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # Runs daily at midnight UTC
-  workflow_dispatch:        # Allows manual trigger
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-gist-index:
@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4          # ✅ Updated from v3 to v4
 
       - name: Fetch Gists and Update README
         env:
@@ -22,26 +22,45 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
         run: |
           # Fetch all gists from GitHub API
-          curl -s \
+          RESPONSE=$(curl -s \
             -H "Authorization: token $GITHUB_TOKEN" \
-            "https://api.github.com/users/$USERNAME/gists?per_page=100" \
-            > gists.json
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/$USERNAME/gists?per_page=100")
 
-          # Generate README.md
+          # ✅ Debug: Check if API response is valid
+          echo "$RESPONSE" | jq . > /dev/null 2>&1
+          if [ $? -ne 0 ]; then
+            echo "❌ Failed to parse API response"
+            echo "$RESPONSE"
+            exit 1
+          fi
+
+          echo "$RESPONSE" > gists.json
+
+          # ✅ Check if gists exist
+          GIST_COUNT=$(echo "$RESPONSE" | jq 'length')
+          echo "Found $GIST_COUNT gists"
+
+          # Generate README.md header
           echo "# 📋 My Gist Index" > README.md
           echo "" >> README.md
           echo "> Auto-updated daily via GitHub Actions" >> README.md
           echo "" >> README.md
-          echo "| # | Description | Files | Last Updated |" >> README.md
-          echo "|---|-------------|-------|--------------|" >> README.md
 
-          # Parse JSON and build table rows
-          jq -r '
-            to_entries[] |
-            .key as $i |
-            .value |
-            "| \($i + 1) | [\(if .description == "" then "Untitled" else .description end)](\(.html_url)) | \(.files | keys | join(", ")) | \(.updated_at[:10]) |"
-          ' gists.json >> README.md
+          if [ "$GIST_COUNT" -eq 0 ]; then
+            echo "_No gists found._" >> README.md
+          else
+            echo "| # | Description | Files | Last Updated |" >> README.md
+            echo "|---|-------------|-------|--------------|" >> README.md
+
+            # ✅ Fixed jq filter with proper null handling
+            echo "$RESPONSE" | jq -r '
+              to_entries[] |
+              .key as $i |
+              .value |
+              "| \($i + 1) | [\(if .description == null or .description == "" then "Untitled" else .description end)](\(.html_url)) | \([.files | keys[] ] | join(", ")) | \(.updated_at[:10]) |"
+            ' >> README.md
+          fi
 
           echo "" >> README.md
           echo "_Last synced: $(date -u '+%Y-%m-%d %H:%M UTC')_" >> README.md
