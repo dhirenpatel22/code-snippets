@@ -1,0 +1,55 @@
+name: Update Gist Index
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # Runs daily at midnight UTC
+  workflow_dispatch:        # Allows manual trigger
+
+jobs:
+  update-gist-index:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Gists and Update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          # Fetch all gists from GitHub API
+          curl -s \
+            -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/users/$USERNAME/gists?per_page=100" \
+            > gists.json
+
+          # Generate README.md
+          echo "# 📋 My Gist Index" > README.md
+          echo "" >> README.md
+          echo "> Auto-updated daily via GitHub Actions" >> README.md
+          echo "" >> README.md
+          echo "| # | Description | Files | Last Updated |" >> README.md
+          echo "|---|-------------|-------|--------------|" >> README.md
+
+          # Parse JSON and build table rows
+          jq -r '
+            to_entries[] |
+            .key as $i |
+            .value |
+            "| \($i + 1) | [\(if .description == "" then "Untitled" else .description end)](\(.html_url)) | \(.files | keys | join(", ")) | \(.updated_at[:10]) |"
+          ' gists.json >> README.md
+
+          echo "" >> README.md
+          echo "_Last synced: $(date -u '+%Y-%m-%d %H:%M UTC')_" >> README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md gists.json
+          git diff --cached --quiet || git commit -m "🔄 Update gist index - $(date -u '+%Y-%m-%d')"
+          git push
