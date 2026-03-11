@@ -1,15 +1,27 @@
 import json
+import sys
 from datetime import datetime, timezone
 
-with open("gists.json", "r") as f:
-    data = json.load(f)
+try:
+    with open("gists.json", "r") as f:
+        data = json.load(f)
+except Exception as e:
+    print(f"Failed to read gists.json: {e}")
+    sys.exit(1)
 
 # Handle API error responses
-if isinstance(data, dict) and "message" in data:
-    print(f"API Error: {data['message']}")
-    exit(1)
+if isinstance(data, dict):
+    print(f"API Error: {data.get('message', 'Unknown error')}")
+    print(f"Full response: {data}")
+    sys.exit(1)
+
+if not isinstance(data, list):
+    print(f"Unexpected response format: {type(data)}")
+    sys.exit(1)
 
 gists = data
+print(f"Processing {len(gists)} gists...")
+
 lines = []
 lines.append("# My Gist Index")
 lines.append("")
@@ -25,7 +37,7 @@ else:
     lines.append("|---|-------------|-------|--------------|")
 
     for i, gist in enumerate(gists, 1):
-        description = gist.get("description") or "Untitled"
+        description = (gist.get("description") or "Untitled").replace("|", "-")
         url = gist.get("html_url", "")
         files = ", ".join(gist.get("files", {}).keys())
         updated = gist.get("updated_at", "")[:10]
@@ -38,18 +50,4 @@ lines.append(f"Last synced: {now}")
 with open("README.md", "w") as f:
     f.write("\n".join(lines))
 
-print(f"README.md generated with {len(gists)} gists.")
-```
-
----
-
-## Final Folder Structure
-```
-your-repo/
-├── .github/
-│   ├── workflows/
-│   │   └── update-gists.yml
-│   └── scripts/
-│       └── generate_readme.py
-├── gists.json          (auto-generated)
-└── README.md           (auto-generated)
+print(f"README.md successfully generated with {len(gists)} gists.")
