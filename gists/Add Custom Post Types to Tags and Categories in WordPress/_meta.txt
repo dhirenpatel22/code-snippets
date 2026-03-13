@@ -1,5 +1,0 @@
-Gist ID:     7a4ef40520e9860ea1b4cdee95930a67
-Description: Add Custom Post Types to Tags and Categories in WordPress
-URL:         https://gist.github.com/7a4ef40520e9860ea1b4cdee95930a67
-Updated at:  2018-06-26T17:54:54Z
-Files:       cpt-tag-category.php

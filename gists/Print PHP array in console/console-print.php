@@ -1,1 +1,0 @@
-<?php echo "<script>console.log('" . json_encode($links) . "');</script>"; ?>

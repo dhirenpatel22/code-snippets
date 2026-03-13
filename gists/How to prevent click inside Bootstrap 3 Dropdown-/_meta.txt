@@ -1,5 +1,0 @@
-Gist ID:     91270d4bc86dae6ef42c9081deef5987
-Description: How to prevent click inside Bootstrap 3 Dropdown?
-URL:         https://gist.github.com/91270d4bc86dae6ef42c9081deef5987
-Updated at:  2020-06-11T08:19:50Z
-Files:       prevent-bootstrap3-dropdown-click.js

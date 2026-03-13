@@ -1,5 +1,0 @@
-Gist ID:     592a8be04b4d1791f6344f0d11fa5eba
-Description: Redirect users to another page after logout in WooCoommerce
-URL:         https://gist.github.com/592a8be04b4d1791f6344f0d11fa5eba
-Updated at:  2020-06-22T18:17:53Z
-Files:       logout-redirect.php

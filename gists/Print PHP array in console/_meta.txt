@@ -1,5 +1,0 @@
-Gist ID:     97ac7a7075d23dac66971673a59dd06c
-Description: Print PHP array in console
-URL:         https://gist.github.com/97ac7a7075d23dac66971673a59dd06c
-Updated at:  2019-08-21T12:07:53Z
-Files:       console-print.php

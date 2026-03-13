@@ -1,5 +1,0 @@
-Gist ID:     88b11f328b0375fe74d62f7c492f0862
-Description: Display a Read More link in WordPress Excerpts
-URL:         https://gist.github.com/88b11f328b0375fe74d62f7c492f0862
-Updated at:  2018-02-25T12:10:36Z
-Files:       display-read-link-wordpress-excerpts.php

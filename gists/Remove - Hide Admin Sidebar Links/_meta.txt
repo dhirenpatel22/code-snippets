@@ -1,5 +1,0 @@
-Gist ID:     12bd2d8bb647243f61e30b5ae70ecfc9
-Description: Remove / Hide Admin Sidebar Links
-URL:         https://gist.github.com/12bd2d8bb647243f61e30b5ae70ecfc9
-Updated at:  2026-03-11T18:10:21Z
-Files:       remove-hide-admin-sidebar-links.php

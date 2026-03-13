@@ -1,5 +1,0 @@
-Gist ID:     27543f99a424d6f428f49d244f6806a6
-Description: Add Browser Specific Class to body
-URL:         https://gist.github.com/27543f99a424d6f428f49d244f6806a6
-Updated at:  2019-09-16T13:37:16Z
-Files:       browser-specific-class.js

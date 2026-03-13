@@ -1,5 +1,0 @@
-Gist ID:     5a994d567c5f00bd9ff11b86fbc2a806
-Description: Create Order line item meta field in WooCommerce
-URL:         https://gist.github.com/5a994d567c5f00bd9ff11b86fbc2a806
-Updated at:  2020-05-08T12:12:18Z
-Files:       create-order-line-item-meta-field.php

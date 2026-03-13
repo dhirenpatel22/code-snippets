@@ -1,5 +1,0 @@
-Gist ID:     64ac4a3f4b2e314adca43dc7b0b347b3
-Description: 
-URL:         https://gist.github.com/64ac4a3f4b2e314adca43dc7b0b347b3
-Updated at:  2019-04-01T15:09:36Z
-Files:       create-new-admin.php

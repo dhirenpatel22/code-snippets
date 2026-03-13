@@ -1,5 +1,0 @@
-Gist ID:     ab78f1809d0ccba285d6fe06e22ec588
-Description: Hide shipping rates when free shipping is available
-URL:         https://gist.github.com/ab78f1809d0ccba285d6fe06e22ec588
-Updated at:  2020-11-25T12:04:08Z
-Files:       wc-hide-all-shipping-if-free-shipping-is-available.php
