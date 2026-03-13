@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.4.0
         with:
           python-version: "3.x"
 
@@ -25,7 +25,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
           GITHUB_USER: ${{ vars.GIT_USER }}
-        run: python sync_gists.py
+        run: python generate_readme.py
 
       - name: Commit and push changes
         run: |
