@@ -1,0 +1,5 @@
+Gist ID:     06f6a7a848caf079a3b1172bc8e7d11d
+Description: WooCommerce: Do something if Product is on Sale
+URL:         https://gist.github.com/06f6a7a848caf079a3b1172bc8e7d11d
+Updated at:  2018-06-25T15:40:43Z
+Files:       if-product-sale.php

@@ -1,0 +1,5 @@
+Gist ID:     df48c3336dc1a45c26c400545cceb3d0
+Description: Different Excerpt Length For Different Post Types
+URL:         https://gist.github.com/df48c3336dc1a45c26c400545cceb3d0
+Updated at:  2018-04-03T16:36:13Z
+Files:       different-excerpt-for-different-post-type.php

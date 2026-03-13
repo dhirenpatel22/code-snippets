@@ -1,0 +1,5 @@
+Gist ID:     495ecd53316fa563dce65aa60f2661ff
+Description: Add New Webhook topics for WooCommerce Subscription
+URL:         https://gist.github.com/495ecd53316fa563dce65aa60f2661ff
+Updated at:  2020-07-19T13:06:43Z
+Files:       new-subscription-webhook-topic.php

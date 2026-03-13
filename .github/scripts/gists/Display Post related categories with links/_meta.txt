@@ -1,0 +1,5 @@
+Gist ID:     f6b4f2588413e9665101240a371d07cf
+Description: Display Post related categories with links
+URL:         https://gist.github.com/f6b4f2588413e9665101240a371d07cf
+Updated at:  2018-07-28T13:08:56Z
+Files:       post-related-category-links.php

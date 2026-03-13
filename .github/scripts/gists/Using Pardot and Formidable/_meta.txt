@@ -1,0 +1,5 @@
+Gist ID:     d04465f3d25d667282406e4552a9e472
+Description: Using Pardot and Formidable
+URL:         https://gist.github.com/d04465f3d25d667282406e4552a9e472
+Updated at:  2019-05-30T12:09:59Z
+Files:       pardot-formidable.php

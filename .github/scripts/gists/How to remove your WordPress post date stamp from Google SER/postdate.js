@@ -1,0 +1,1 @@
+document.write("<?php the_time('F jS, Y') ?>");

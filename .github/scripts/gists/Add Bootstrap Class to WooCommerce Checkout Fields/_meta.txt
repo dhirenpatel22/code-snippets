@@ -1,0 +1,5 @@
+Gist ID:     9f8916ba3c40bf96b41f6c21dfa0d7e6
+Description: Add Bootstrap Class to WooCommerce Checkout Fields
+URL:         https://gist.github.com/9f8916ba3c40bf96b41f6c21dfa0d7e6
+Updated at:  2018-02-25T15:22:43Z
+Files:       wc-checkout-bootstrap.php

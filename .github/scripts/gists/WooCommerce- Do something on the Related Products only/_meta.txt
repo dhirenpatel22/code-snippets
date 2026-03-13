@@ -1,0 +1,5 @@
+Gist ID:     21135f4d5f9cfbc22ef499d080a111c5
+Description: WooCommerce: Do something on the Related Products only
+URL:         https://gist.github.com/21135f4d5f9cfbc22ef499d080a111c5
+Updated at:  2018-06-25T15:46:56Z
+Files:       if-related-products.php

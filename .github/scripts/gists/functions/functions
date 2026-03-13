@@ -1,0 +1,102 @@
+<?php 
+// Remove child category from Sitemap.xml
+add_filter( 'wpseo_sitemap_url', 'sitemap_exclude_taxonomy' );
+function sitemap_exclude_taxonomy( $url = null, $type = null, $term = null ) {
+	$dataurl = $url;
+	$url = explode('brands/',$url);
+	$url_data = explode('/',$url[1]);
+	$term_slug = $url_data[0];
+	$texonomy = get_term_by('slug', $term_slug , "wsac_cse_make");
+	if(!$texonomy->parent)
+	{
+		return $dataurl;
+	}
+}
+add_filter('wpseo_sitemap_exclude_empty_terms', 'return_false');
+?>
+
+<?php
+// Remove Plugin CSS and JS for Specific page
+function wpa_scripts() {
+    // if this is not the contact page, remove the script
+    /*if( ! is_page('contact-us') ){
+       wp_dequeue_script('snazzymaps-js');
+    }*/
+	if(is_front_page()){
+
+		// Add to Any Plugin
+		wp_dequeue_style('addtoany');
+		wp_dequeue_script('addtoany');
+
+		// WP Ajaxify Comments
+		wp_dequeue_script('wpAjaxifyComments');
+
+		// Google Reviews Widget
+		wp_dequeue_style('swiper_css');
+		wp_dequeue_script('swiper_js');
+
+		// WP Store Locator
+		wp_dequeue_style('wpsl-styles');
+
+		// CF7
+		wp_dequeue_script('contact-form-7');
+
+		//wp_dequeue_script('scf7wmf-wizard-form-js');
+		//wp_dequeue_style('google-maps-builder-map-icons');
+
+	}
+}
+// adjust priority to make sure this runs after the plugins add their scripts/styles
+add_action( 'wp_enqueue_scripts', 'wpa_scripts', 100 );
+?>
+
+<?php 
+//Redirect single page of post type to Homepage
+add_action( 'template_redirect', 'wpse_128636_redirect_post' );
+function wpse_128636_redirect_post() {
+  $queried_post_type = get_query_var('post_type');
+  if ( is_single() && 'testimonials' ==  $queried_post_type ) {
+    wp_redirect( home_url(), 301 );
+    exit;
+  } else if( is_single() && 'video_testimonials' ==  $queried_post_type ){
+	wp_redirect( home_url(), 301 );
+    exit;
+  }
+} 
+?>
+
+<?php
+// WooCommerce displaying percentage sale in product loop
+add_action( 'woocommerce_before_shop_loop_item', 'bbloomer_show_sale_percentage_loop', 25 );
+function bbloomer_show_sale_percentage_loop() {
+	global $product;
+	// print_r($product);
+	if ( $product->is_on_sale()) {
+		//echo "Hello";
+		if (!$product->is_type('variable')) {
+			$max_percentage = ( ( $product->get_regular_price() - $product->get_sale_price() ) / $product->get_regular_price() ) * 100;
+		} else {
+			$max_percentage = 0;
+			foreach ( $product->get_children() as $child_id ) {
+				$variation = wc_get_product( $child_id );
+				$price = $variation->get_regular_price();
+				$sale = $variation->get_sale_price();
+				if ( $price != 0 && ! empty( $sale ) ) $percentage = ( $price - $sale ) / $price * 100;
+				if ( $percentage > $max_percentage ) {
+					$max_percentage = $percentage;
+				}
+			}
+		}
+		 //echo "<div class='sale-perc'>Sale!</div>";
+		echo "<a href=". get_permalink() ."><div class='sale-perc'>" . round($max_percentage) . "%<span>off</span></div></a>";
+	}
+}
+?>
+<?php
+// Create array of products which are on sale
+add_action( 'woocommerce_product_query', 'so_20990199_product_query' );
+function so_20990199_product_query( $q ){
+	$product_ids_on_sale = wc_get_product_ids_on_sale();
+	$q->set( 'post__in', (array) $product_ids_on_sale );
+}
+?>

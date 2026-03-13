@@ -1,0 +1,5 @@
+Gist ID:     8f7150639596bc69198532896cca8b0e
+Description: Disable Animation effects of Visual Composer in Mobile
+URL:         https://gist.github.com/8f7150639596bc69198532896cca8b0e
+Updated at:  2019-07-22T13:31:42Z
+Files:       disable-animate.css

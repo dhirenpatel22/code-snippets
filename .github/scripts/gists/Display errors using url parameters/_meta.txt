@@ -1,0 +1,5 @@
+Gist ID:     0b03bec2cca68e104ebab6b948996da2
+Description: Display errors using url parameters
+URL:         https://gist.github.com/0b03bec2cca68e104ebab6b948996da2
+Updated at:  2019-05-06T12:54:35Z
+Files:       display-error.php

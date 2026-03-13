@@ -1,0 +1,5 @@
+Gist ID:     77658601f843a85fe91de1ab82f799d6
+Description: How to get various URL of all WooCommerce pages?
+URL:         https://gist.github.com/77658601f843a85fe91de1ab82f799d6
+Updated at:  2018-02-25T16:45:42Z
+Files:       get-woocommerce-urls.php
