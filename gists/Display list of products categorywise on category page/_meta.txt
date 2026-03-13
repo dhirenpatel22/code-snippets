@@ -1,0 +1,5 @@
+Gist ID:     878d5caf505a48610f385651bc1222ba
+Description: Display list of products categorywise on category page
+URL:         https://gist.github.com/878d5caf505a48610f385651bc1222ba
+Updated at:  2018-07-29T15:25:15Z
+Files:       category-wise-product-list.php

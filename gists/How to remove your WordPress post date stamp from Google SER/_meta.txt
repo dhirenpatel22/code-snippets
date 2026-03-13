@@ -1,0 +1,5 @@
+Gist ID:     92ad6e92dfc9549979fc1a643fb41067
+Description: How to remove your WordPress post date stamp from Google SERPS?
+URL:         https://gist.github.com/92ad6e92dfc9549979fc1a643fb41067
+Updated at:  2020-06-22T06:05:39Z
+Files:       postdate.js

@@ -1,0 +1,5 @@
+Gist ID:     a0f8a98737a75a1abb207e4b90986972
+Description: Display single category in WooCommerce loop
+URL:         https://gist.github.com/a0f8a98737a75a1abb207e4b90986972
+Updated at:  2020-06-21T16:05:43Z
+Files:       category-wc-loop.php

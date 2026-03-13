@@ -1,0 +1,5 @@
+Gist ID:     b81a914ebcf7b4a6964d19dd6b646a4a
+Description: Remove links from My Account menu in WooCommerce
+URL:         https://gist.github.com/b81a914ebcf7b4a6964d19dd6b646a4a
+Updated at:  2018-04-07T09:39:05Z
+Files:       wc-remove-my-account-links.php
