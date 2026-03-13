@@ -24,8 +24,17 @@ jobs:
       - name: Run gist sync script
         env:
           GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
-          GITHUB_USER: ${{ vars.GIT_USER }}
-        run: python generate_readme.py
+          GIT_USER: ${{ vars.GIT_USER }}
+        run: |
+          echo "=== Python version ==="
+          python --version
+          echo "=== Files in repo root ==="
+          ls -la
+          echo "=== Checking env vars (masked) ==="
+          echo "GITHUB_TOKEN set: ${{ secrets.GIST_TOKEN != '' }}"
+          echo "GIT_USER set: ${{ vars.GIT_USER != '' }}"
+          echo "=== Running script ==="
+          python generate_readme.py
 
       - name: Commit and push changes
         run: |
