@@ -34,7 +34,7 @@ jobs:
           echo "GITHUB_TOKEN set: ${{ secrets.GIST_TOKEN != '' }}"
           echo "GIT_USER set: ${{ vars.GIT_USER != '' }}"
           echo "=== Running script ==="
-          python generate_readme.py
+          python .github/scripts/generate_readme.py
 
       - name: Commit and push changes
         run: |
