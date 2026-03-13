@@ -5,7 +5,7 @@ import shutil
 
 GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
 GITHUB_USER = os.environ["GIT_USER"]
-REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../../"))
 
 headers = {
     "Authorization": f"token {GITHUB_TOKEN}",
