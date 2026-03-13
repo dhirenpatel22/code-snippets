@@ -1,0 +1,5 @@
+Gist ID:     e5f2a34b81038c5ff1dc05264926753e
+Description: Remove decimals from Product prices in WooCommerce
+URL:         https://gist.github.com/e5f2a34b81038c5ff1dc05264926753e
+Updated at:  2018-09-26T13:51:39Z
+Files:       Remove decimals from Product prices in WooCommerce.php

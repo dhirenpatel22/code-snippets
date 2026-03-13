@@ -1,0 +1,5 @@
+Gist ID:     74a4999fc3d64bbe8b21e7cad277df2f
+Description: functions
+URL:         https://gist.github.com/74a4999fc3d64bbe8b21e7cad277df2f
+Updated at:  2018-08-31T08:15:36Z
+Files:       functions

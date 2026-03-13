@@ -1,0 +1,5 @@
+Gist ID:     f894b01a8ad4a206398e835747ab3242
+Description: Create custom hooks for WooCommerce Subscription status change to cancelled and subscription status change to active
+URL:         https://gist.github.com/f894b01a8ad4a206398e835747ab3242
+Updated at:  2025-04-18T11:54:44Z
+Files:       create-custom-subscription-webhooks.php

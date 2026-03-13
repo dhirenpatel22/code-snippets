@@ -1,0 +1,5 @@
+Gist ID:     2c0d603e66b29a0fd5bb033d6d876aa7
+Description: Exclude specific categories from the Shop page
+URL:         https://gist.github.com/2c0d603e66b29a0fd5bb033d6d876aa7
+Updated at:  2020-07-31T13:55:12Z
+Files:       exclude-category-from-shop.php

@@ -1,0 +1,5 @@
+Gist ID:     f74c4e2ae4ec6dfc0490d4a53c98ebb2
+Description: Secure FTP Connection in WordPress
+URL:         https://gist.github.com/f74c4e2ae4ec6dfc0490d4a53c98ebb2
+Updated at:  2018-03-30T09:52:52Z
+Files:       secure-ftp-wordpress.php

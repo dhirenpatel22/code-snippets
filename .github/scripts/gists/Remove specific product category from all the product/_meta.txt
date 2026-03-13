@@ -1,0 +1,5 @@
+Gist ID:     8e509d46a13cdfbcf53786398d54007e
+Description: Remove specific product category from all the product
+URL:         https://gist.github.com/8e509d46a13cdfbcf53786398d54007e
+Updated at:  2024-05-07T18:13:12Z
+Files:       remove_product_category.php

@@ -1,0 +1,5 @@
+Gist ID:     80e18a75e2d631ce0f5d3514a995f1c8
+Description: Add shortcode for search form in WordPress
+URL:         https://gist.github.com/80e18a75e2d631ce0f5d3514a995f1c8
+Updated at:  2019-08-20T10:38:49Z
+Files:       search-shortcode.php

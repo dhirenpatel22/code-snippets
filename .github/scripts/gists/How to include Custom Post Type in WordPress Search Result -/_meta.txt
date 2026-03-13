@@ -1,0 +1,5 @@
+Gist ID:     b248633d082d7c5951cca7b60b51e02c
+Description: How to include Custom Post Type in WordPress Search Result ?
+URL:         https://gist.github.com/b248633d082d7c5951cca7b60b51e02c
+Updated at:  2018-02-25T12:15:04Z
+Files:       cpt-wordpress-search-result.php
