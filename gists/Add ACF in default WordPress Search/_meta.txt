@@ -1,5 +1,0 @@
-Gist ID:     196b407937c571d99a84ee6d20c6d580
-Description: Add ACF in default WordPress Search
-URL:         https://gist.github.com/196b407937c571d99a84ee6d20c6d580
-Updated at:  2019-09-20T11:33:31Z
-Files:       acf-wp-search.php

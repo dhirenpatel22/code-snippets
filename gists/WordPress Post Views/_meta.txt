@@ -1,5 +1,0 @@
-Gist ID:     651cf2d9490a104447e0ebc77b609263
-Description: WordPress Post Views
-URL:         https://gist.github.com/651cf2d9490a104447e0ebc77b609263
-Updated at:  2018-06-27T08:21:00Z
-Files:       post-views.php

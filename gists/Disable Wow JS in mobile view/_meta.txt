@@ -1,5 +1,0 @@
-Gist ID:     a0f10e580b13c0ce325bd02ac51335d9
-Description: Disable Wow JS in mobile view
-URL:         https://gist.github.com/a0f10e580b13c0ce325bd02ac51335d9
-Updated at:  2019-07-22T13:32:45Z
-Files:       disable-wow.js

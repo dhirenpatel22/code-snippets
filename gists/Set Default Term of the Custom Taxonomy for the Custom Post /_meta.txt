@@ -1,5 +1,0 @@
-Gist ID:     661d5919ed185e524a77558f5fdece4b
-Description: Set Default Term of the Custom Taxonomy for the Custom Post Type
-URL:         https://gist.github.com/661d5919ed185e524a77558f5fdece4b
-Updated at:  2019-01-10T19:25:45Z
-Files:       default-term.php

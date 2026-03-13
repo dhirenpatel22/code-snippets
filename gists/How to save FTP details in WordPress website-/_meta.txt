@@ -1,5 +1,0 @@
-Gist ID:     567fa2d1c5d4985aad534bee49c1bac7
-Description: How to save FTP details in WordPress website?
-URL:         https://gist.github.com/567fa2d1c5d4985aad534bee49c1bac7
-Updated at:  2018-03-30T09:49:21Z
-Files:       save-ftp-wordpress.php

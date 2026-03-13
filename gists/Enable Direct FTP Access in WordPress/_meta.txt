@@ -1,5 +1,0 @@
-Gist ID:     db2d51816ea948ffe167eb2d02924a1f
-Description: Enable Direct FTP Access in WordPress
-URL:         https://gist.github.com/db2d51816ea948ffe167eb2d02924a1f
-Updated at:  2018-03-30T09:55:49Z
-Files:       direct-ftp-access-wordpress.php

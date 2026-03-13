@@ -1,5 +1,0 @@
-Gist ID:     2fcadf8935bc2a6a7399a017e0e97070
-Description: Allow Draft Pages and Private Pages as Parent page
-URL:         https://gist.github.com/2fcadf8935bc2a6a7399a017e0e97070
-Updated at:  2019-06-13T04:08:30Z
-Files:       draft-parent.php

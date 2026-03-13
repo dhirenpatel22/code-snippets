@@ -1,5 +1,0 @@
-Gist ID:     9c45219857c6314d4a086f774c8ef557
-Description: Do something if product belongs to a specific product category
-URL:         https://gist.github.com/9c45219857c6314d4a086f774c8ef557
-Updated at:  2018-06-25T15:35:25Z
-Files:       if-product-category.php

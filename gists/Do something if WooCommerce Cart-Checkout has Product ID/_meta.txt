@@ -1,5 +1,0 @@
-Gist ID:     e5ec6625dab79a8617739c3d7e24a42d
-Description: Do something if WooCommerce Cart/Checkout has Product ID
-URL:         https://gist.github.com/e5ec6625dab79a8617739c3d7e24a42d
-Updated at:  2018-06-25T15:51:35Z
-Files:       if-cart-product.php

@@ -84,7 +84,7 @@ def sync_gist(gist):
 
 def main():
     gists = fetch_all_gists()
-    gists_dir = os.path.join(REPO_DIR, "gists")
+    gists_dir = REPO_DIR
     os.makedirs(gists_dir, exist_ok=True)
 
     for gist in gists:

@@ -1,5 +1,0 @@
-Gist ID:     42b44df4a27570ff6a6baddccb0f2f96
-Description: WooCommerce: Do something if product is simple, variable, external and grouped
-URL:         https://gist.github.com/42b44df4a27570ff6a6baddccb0f2f96
-Updated at:  2018-06-25T15:43:29Z
-Files:       if-product-type.php

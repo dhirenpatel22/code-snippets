@@ -1,5 +1,0 @@
-Gist ID:     dd90cfbe6d7154016057159a4c5dd943
-Description: Display related posts with same tag as current post tag
-URL:         https://gist.github.com/dd90cfbe6d7154016057159a4c5dd943
-Updated at:  2018-06-07T15:57:17Z
-Files:       related-posts-same-tag.php

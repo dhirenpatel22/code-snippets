@@ -1,5 +1,0 @@
-Gist ID:     44e70ebd38ee5fef11137ca211a04462
-Description: How to display Custom Post Types in “At A Glance” Meta Box ?
-URL:         https://gist.github.com/44e70ebd38ee5fef11137ca211a04462
-Updated at:  2018-03-30T10:09:14Z
-Files:       display-cpt-wordpress-dashboard.php

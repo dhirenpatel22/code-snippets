@@ -1,5 +1,0 @@
-Gist ID:     c48d1a62a569a8f7eedacd5c22a13f28
-Description: Display list of products category wise on archive page
-URL:         https://gist.github.com/c48d1a62a569a8f7eedacd5c22a13f28
-Updated at:  2018-07-29T11:06:46Z
-Files:       products-list-category-wise.php
