@@ -1,0 +1,5 @@
+Gist ID:     4999dbf66fdffeddf8f8ae71d011bc50
+Description: Display First name and Last name as display name in WordPress
+URL:         https://gist.github.com/4999dbf66fdffeddf8f8ae71d011bc50
+Updated at:  2018-06-07T15:54:38Z
+Files:       display-name.php

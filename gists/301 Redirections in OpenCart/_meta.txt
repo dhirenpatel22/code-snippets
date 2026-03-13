@@ -1,0 +1,5 @@
+Gist ID:     ec8230cb420e83f3599abbb8b21760a8
+Description: 301 Redirections in OpenCart
+URL:         https://gist.github.com/ec8230cb420e83f3599abbb8b21760a8
+Updated at:  2019-06-03T18:08:16Z
+Files:       redirect.txt

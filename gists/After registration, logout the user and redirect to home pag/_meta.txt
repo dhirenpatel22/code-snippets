@@ -1,0 +1,5 @@
+Gist ID:     8b2e7e8863bd33af8d390e46a33ba298
+Description: After registration, logout the user and redirect to home page
+URL:         https://gist.github.com/8b2e7e8863bd33af8d390e46a33ba298
+Updated at:  2020-06-22T18:18:43Z
+Files:       after-register-redirect.php

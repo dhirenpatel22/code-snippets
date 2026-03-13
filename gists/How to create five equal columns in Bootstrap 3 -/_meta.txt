@@ -1,0 +1,5 @@
+Gist ID:     9b546a4a089fe6be9767df50c9ddf4cd
+Description: How to create five equal columns in Bootstrap 3 ?
+URL:         https://gist.github.com/9b546a4a089fe6be9767df50c9ddf4cd
+Updated at:  2018-02-25T12:13:07Z
+Files:       five-columns-bootstrap3.css

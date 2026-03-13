@@ -1,0 +1,5 @@
+Gist ID:     c3c5b1ab8fa6749bb81700a08b7259a2
+Description: How to Move Comment Textarea to Bottom in WordPress?
+URL:         https://gist.github.com/c3c5b1ab8fa6749bb81700a08b7259a2
+Updated at:  2018-02-25T12:11:30Z
+Files:       how-to-move-comment-textarea-to-bottom-in-wordpress.php

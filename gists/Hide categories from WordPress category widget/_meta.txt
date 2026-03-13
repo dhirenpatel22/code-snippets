@@ -1,0 +1,5 @@
+Gist ID:     b83d526faa0365a1d78021743047843d
+Description: Hide categories from WordPress category widget
+URL:         https://gist.github.com/b83d526faa0365a1d78021743047843d
+Updated at:  2020-02-14T20:32:37Z
+Files:       hide-category-widget.php

@@ -1,0 +1,5 @@
+Gist ID:     18852b69599aa4ea322708367e00f630
+Description: Redirect user to different page based on user role after password reset from the backend screen
+URL:         https://gist.github.com/18852b69599aa4ea322708367e00f630
+Updated at:  2020-07-19T13:16:46Z
+Files:       redirect-after-reset-password-based-on-userrole.php

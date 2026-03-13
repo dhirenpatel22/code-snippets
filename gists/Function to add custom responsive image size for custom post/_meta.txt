@@ -1,0 +1,5 @@
+Gist ID:     7832463f3883ddce3745f1a3787eece6
+Description: Function to add custom responsive image size for custom post types and Advance Custom Fields
+URL:         https://gist.github.com/7832463f3883ddce3745f1a3787eece6
+Updated at:  2019-01-12T08:05:03Z
+Files:       responsive-src.php

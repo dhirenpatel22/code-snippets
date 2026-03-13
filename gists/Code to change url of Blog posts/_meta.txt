@@ -1,0 +1,5 @@
+Gist ID:     1b83e67829c88305374854208170f209
+Description: Code to change url of Blog posts
+URL:         https://gist.github.com/1b83e67829c88305374854208170f209
+Updated at:  2018-10-03T16:58:04Z
+Files:       Code to change url of Blog posts
