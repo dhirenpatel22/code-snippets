@@ -1,53 +1,37 @@
-name: Update Gist Index
+name: Sync Gists Daily
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    - cron: "0 2 * * *"   # Every day at 2:00 AM UTC
+  workflow_dispatch:       # Allows manual trigger from GitHub UI
 
 jobs:
-  update-gist-index:
+  sync-gists:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch Gists from GitHub API
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run gist sync script
         env:
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-        run: |
-          echo "Fetching gists for user: $USERNAME"
+          GITHUB_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GITHUB_USER: ${{ vars.GIT_USER }}
+        run: python sync_gists.py
 
-          HTTP_STATUS=$(curl -s -o gists.json -w "%{http_code}" \
-            -H "Authorization: token $GIST_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/users/$USERNAME/gists?per_page=100")
-
-          echo "HTTP Status: $HTTP_STATUS"
-
-          if [ "$HTTP_STATUS" != "200" ]; then
-            echo "API call failed with status $HTTP_STATUS"
-            cat gists.json
-            exit 1
-          fi
-
-          echo "Gists fetched successfully"
-
-      - name: Generate README from Gists
-        run: python3 .github/scripts/generate_readme.py
-
-      - name: Commit and Push Changes
+      - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md gists.json
-          git diff --cached --quiet || git commit -m "Update gist index - $(date -u '+%Y-%m-%d')"
+          git add -A
+          # Only commit if there are actual changes
+          git diff --cached --quiet || git commit -m "chore: sync gists $(date +'%Y-%m-%d %H:%M UTC')"
           git push
