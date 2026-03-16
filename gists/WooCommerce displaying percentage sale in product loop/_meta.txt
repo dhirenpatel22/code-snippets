@@ -1,0 +1,5 @@
+Gist ID:     74a4999fc3d64bbe8b21e7cad277df2f
+Description: WooCommerce displaying percentage sale in product loop
+URL:         https://gist.github.com/74a4999fc3d64bbe8b21e7cad277df2f
+Updated at:  2026-03-16T19:08:04Z
+Files:       display-sale-percentage-product-loop.php

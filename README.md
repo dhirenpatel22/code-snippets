@@ -2,6 +2,9 @@
 
 | Description | Gist ID | Files | Updated |
 |-------------|---------|-------|---------|
+| [WooCommerce displaying percentage sale in product loop](https://gist.github.com/74a4999fc3d64bbe8b21e7cad277df2f) | `74a4999fc3d64bbe8b21e7cad277df2f` | display-sale-percentage-product-loop.php | 2026-03-16 |
+| [Remove child category from Yoast SEO Sitemap.xml](https://gist.github.com/e1a1f162e378db42d8497ef2ee10151e) | `e1a1f162e378db42d8497ef2ee10151e` | exclude-taxonomy-sitemap-xml.php | 2026-03-16 |
+| [WordPress Smart Debug](https://gist.github.com/a7ce04a8e7de5f5de38455d3c8c4b25e) | `a7ce04a8e7de5f5de38455d3c8c4b25e` | wp-smart-debug.php | 2026-03-16 |
 | [Rename Admin Sidebar Links](https://gist.github.com/26bae0e26b9f286f5fb4e95b74dea727) | `26bae0e26b9f286f5fb4e95b74dea727` | rename-admin-sidebar-links.php | 2026-03-11 |
 | [Reorder / Rearrange Admin Sidebar Links](https://gist.github.com/8210c568edcf3a91c13fa42b9c731309) | `8210c568edcf3a91c13fa42b9c731309` | reorder-rearrange-admin-sidebar-links.php | 2026-03-11 |
 | [Remove / Hide Admin Sidebar Links](https://gist.github.com/12bd2d8bb647243f61e30b5ae70ecfc9) | `12bd2d8bb647243f61e30b5ae70ecfc9` | remove-hide-admin-sidebar-links.php | 2026-03-11 |
@@ -36,7 +39,6 @@
 | [Set Default Term of the Custom Taxonomy for the Custom Post Type](https://gist.github.com/661d5919ed185e524a77558f5fdece4b) | `661d5919ed185e524a77558f5fdece4b` | default-term.php | 2019-01-10 |
 | [Code to change url of Blog posts](https://gist.github.com/1b83e67829c88305374854208170f209) | `1b83e67829c88305374854208170f209` | Code to change url of Blog posts | 2018-10-03 |
 | [Remove decimals from Product prices in WooCommerce](https://gist.github.com/e5f2a34b81038c5ff1dc05264926753e) | `e5f2a34b81038c5ff1dc05264926753e` | Remove decimals from Product prices in WooCommerce.php | 2018-09-26 |
-| [functions](https://gist.github.com/74a4999fc3d64bbe8b21e7cad277df2f) | `74a4999fc3d64bbe8b21e7cad277df2f` | functions | 2018-08-31 |
 | [Display list of products categorywise on category page](https://gist.github.com/878d5caf505a48610f385651bc1222ba) | `878d5caf505a48610f385651bc1222ba` | category-wise-product-list.php | 2018-07-29 |
 | [Display list of products category wise on archive page](https://gist.github.com/c48d1a62a569a8f7eedacd5c22a13f28) | `c48d1a62a569a8f7eedacd5c22a13f28` | products-list-category-wise.php | 2018-07-29 |
 | [Display Post related categories with links](https://gist.github.com/f6b4f2588413e9665101240a371d07cf) | `f6b4f2588413e9665101240a371d07cf` | post-related-category-links.php | 2018-07-28 |

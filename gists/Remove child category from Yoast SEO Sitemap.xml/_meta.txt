@@ -1,0 +1,5 @@
+Gist ID:     e1a1f162e378db42d8497ef2ee10151e
+Description: Remove child category from Yoast SEO Sitemap.xml
+URL:         https://gist.github.com/e1a1f162e378db42d8497ef2ee10151e
+Updated at:  2026-03-16T19:06:13Z
+Files:       exclude-taxonomy-sitemap-xml.php
