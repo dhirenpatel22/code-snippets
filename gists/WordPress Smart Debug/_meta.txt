@@ -1,0 +1,5 @@
+Gist ID:     a7ce04a8e7de5f5de38455d3c8c4b25e
+Description: WordPress Smart Debug
+URL:         https://gist.github.com/a7ce04a8e7de5f5de38455d3c8c4b25e
+Updated at:  2026-03-16T18:13:27Z
+Files:       wp-smart-debug.php
