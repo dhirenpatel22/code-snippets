@@ -1,0 +1,5 @@
+Gist ID:     915b460c7120ce5b1d61b5d0fe627614
+Description: Disable Yoast next and prev rel links on author pages
+URL:         https://gist.github.com/915b460c7120ce5b1d61b5d0fe627614
+Updated at:  2026-04-25T07:28:17Z
+Files:       disable-yoast-next-prev-rel-links-author-page.php

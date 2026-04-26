@@ -1,0 +1,5 @@
+Gist ID:     d969200735b4ddd30c0a0f67a3691717
+Description: Change WooCommerce Coupon Labels
+URL:         https://gist.github.com/d969200735b4ddd30c0a0f67a3691717
+Updated at:  2026-04-25T13:40:16Z
+Files:       change-woo-coupon-labels.php

@@ -1,0 +1,5 @@
+Gist ID:     f602b0a1b4c5a4f0dc8f9f2e0facb8b3
+Description: Disable Yoast SEO Auto Redirects
+URL:         https://gist.github.com/f602b0a1b4c5a4f0dc8f9f2e0facb8b3
+Updated at:  2026-04-25T06:48:10Z
+Files:       disable-yoast-seo-auto-redirect.php

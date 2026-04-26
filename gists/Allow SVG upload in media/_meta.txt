@@ -1,0 +1,5 @@
+Gist ID:     479171dde11a90c1e9ba3a2811dc5ae0
+Description: Allow SVG upload in media
+URL:         https://gist.github.com/479171dde11a90c1e9ba3a2811dc5ae0
+Updated at:  2026-04-25T07:25:57Z
+Files:       allow-svg-upload-media.php
