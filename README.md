@@ -2,6 +2,13 @@
 
 | Description | Gist ID | Files | Updated |
 |-------------|---------|-------|---------|
+| [Change related products query to pull items from Yoast Primary Category](https://gist.github.com/1df337b166768f9d41f7806d1ccd7aba) | `1df337b166768f9d41f7806d1ccd7aba` | related-products-query-to-yoast-primary-category.php | 2026-04-25 |
+| [Change WooCommerce Coupon Labels](https://gist.github.com/d969200735b4ddd30c0a0f67a3691717) | `d969200735b4ddd30c0a0f67a3691717` | change-woo-coupon-labels.php | 2026-04-25 |
+| [ Hide shipping rates when free shipping is available.](https://gist.github.com/f4e5f2d4f08c7d12f750fd1081ccd139) | `f4e5f2d4f08c7d12f750fd1081ccd139` | hide-shipping-rates-when-free-shipping-is-available.php | 2026-04-25 |
+| [Disable Yoast next and prev rel links on author pages](https://gist.github.com/915b460c7120ce5b1d61b5d0fe627614) | `915b460c7120ce5b1d61b5d0fe627614` | disable-yoast-next-prev-rel-links-author-page.php | 2026-04-25 |
+| [Allow SVG upload in media](https://gist.github.com/479171dde11a90c1e9ba3a2811dc5ae0) | `479171dde11a90c1e9ba3a2811dc5ae0` | allow-svg-upload-media.php | 2026-04-25 |
+| [Authenticate Rest API in WordPress](https://gist.github.com/5ab801100fd5f80972dc48900b418de3) | `5ab801100fd5f80972dc48900b418de3` | authenticate-Rest-API-WordPress.php | 2026-04-25 |
+| [Disable Yoast SEO Auto Redirects](https://gist.github.com/f602b0a1b4c5a4f0dc8f9f2e0facb8b3) | `f602b0a1b4c5a4f0dc8f9f2e0facb8b3` | disable-yoast-seo-auto-redirect.php | 2026-04-25 |
 | [WooCommerce displaying percentage sale in product loop](https://gist.github.com/74a4999fc3d64bbe8b21e7cad277df2f) | `74a4999fc3d64bbe8b21e7cad277df2f` | display-sale-percentage-product-loop.php | 2026-03-16 |
 | [Remove child category from Yoast SEO Sitemap.xml](https://gist.github.com/e1a1f162e378db42d8497ef2ee10151e) | `e1a1f162e378db42d8497ef2ee10151e` | exclude-taxonomy-sitemap-xml.php | 2026-03-16 |
 | [WordPress Smart Debug](https://gist.github.com/a7ce04a8e7de5f5de38455d3c8c4b25e) | `a7ce04a8e7de5f5de38455d3c8c4b25e` | wp-smart-debug.php | 2026-03-16 |

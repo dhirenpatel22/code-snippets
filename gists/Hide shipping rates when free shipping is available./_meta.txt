@@ -1,0 +1,5 @@
+Gist ID:     f4e5f2d4f08c7d12f750fd1081ccd139
+Description:  Hide shipping rates when free shipping is available.
+URL:         https://gist.github.com/f4e5f2d4f08c7d12f750fd1081ccd139
+Updated at:  2026-04-25T13:32:52Z
+Files:       hide-shipping-rates-when-free-shipping-is-available.php

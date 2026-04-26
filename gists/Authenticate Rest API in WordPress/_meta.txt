@@ -1,0 +1,5 @@
+Gist ID:     5ab801100fd5f80972dc48900b418de3
+Description: Authenticate Rest API in WordPress
+URL:         https://gist.github.com/5ab801100fd5f80972dc48900b418de3
+Updated at:  2026-04-25T06:51:22Z
+Files:       authenticate-Rest-API-WordPress.php

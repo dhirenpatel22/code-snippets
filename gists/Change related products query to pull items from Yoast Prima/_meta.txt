@@ -1,0 +1,5 @@
+Gist ID:     1df337b166768f9d41f7806d1ccd7aba
+Description: Change related products query to pull items from Yoast Primary Category
+URL:         https://gist.github.com/1df337b166768f9d41f7806d1ccd7aba
+Updated at:  2026-04-25T13:42:34Z
+Files:       related-products-query-to-yoast-primary-category.php
