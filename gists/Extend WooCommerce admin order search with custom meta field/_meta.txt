@@ -1,0 +1,5 @@
+Gist ID:     4b8182dcfa39a35cc440690293b64657
+Description: Extend WooCommerce admin order search with custom meta fields.
+URL:         https://gist.github.com/4b8182dcfa39a35cc440690293b64657
+Updated at:  2026-04-28T02:18:02Z
+Files:       custom-meta-fields-woo-admin-order-search.php

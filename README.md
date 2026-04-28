@@ -2,6 +2,9 @@
 
 | Description | Gist ID | Files | Updated |
 |-------------|---------|-------|---------|
+| [Custom Failed Payment Retry Rules for WooCommerce Subscriptions](https://gist.github.com/af0992e56021f1bda39f10687290f6e3) | `af0992e56021f1bda39f10687290f6e3` | woo-subscription-custom-failed-payment-retry-rules.php | 2026-04-28 |
+| [Add Parent ID to the Renewal orders of the Subscriptions](https://gist.github.com/f28dbd4165fb9621680c3f1f3c7d8317) | `f28dbd4165fb9621680c3f1f3c7d8317` | woo-subscription-add-parent-id-to-renewal-orders.php | 2026-04-28 |
+| [Extend WooCommerce admin order search with custom meta fields.](https://gist.github.com/4b8182dcfa39a35cc440690293b64657) | `4b8182dcfa39a35cc440690293b64657` | custom-meta-fields-woo-admin-order-search.php | 2026-04-28 |
 | [Change related products query to pull items from Yoast Primary Category](https://gist.github.com/1df337b166768f9d41f7806d1ccd7aba) | `1df337b166768f9d41f7806d1ccd7aba` | related-products-query-to-yoast-primary-category.php | 2026-04-25 |
 | [Change WooCommerce Coupon Labels](https://gist.github.com/d969200735b4ddd30c0a0f67a3691717) | `d969200735b4ddd30c0a0f67a3691717` | change-woo-coupon-labels.php | 2026-04-25 |
 | [ Hide shipping rates when free shipping is available.](https://gist.github.com/f4e5f2d4f08c7d12f750fd1081ccd139) | `f4e5f2d4f08c7d12f750fd1081ccd139` | hide-shipping-rates-when-free-shipping-is-available.php | 2026-04-25 |

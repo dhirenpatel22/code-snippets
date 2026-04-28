@@ -1,0 +1,5 @@
+Gist ID:     af0992e56021f1bda39f10687290f6e3
+Description: Custom Failed Payment Retry Rules for WooCommerce Subscriptions
+URL:         https://gist.github.com/af0992e56021f1bda39f10687290f6e3
+Updated at:  2026-04-28T02:40:26Z
+Files:       woo-subscription-custom-failed-payment-retry-rules.php
