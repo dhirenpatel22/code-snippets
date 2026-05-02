@@ -1,5 +1,7 @@
 # Gist Index
 
+A curated list of WordPress and WooCommerce code snippets hosted as GitHub Gists.
+
 | Description | Gist ID | Files | Updated |
 |-------------|---------|-------|---------|
 | [Custom Failed Payment Retry Rules for WooCommerce Subscriptions](https://gist.github.com/af0992e56021f1bda39f10687290f6e3) | `af0992e56021f1bda39f10687290f6e3` | woo-subscription-custom-failed-payment-retry-rules.php | 2026-04-28 |
