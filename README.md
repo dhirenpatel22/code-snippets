@@ -2,6 +2,7 @@
 
 | Description | Gist ID | Files | Updated |
 |-------------|---------|-------|---------|
+| [Yoast SEO Reading Time Shortcode](https://gist.github.com/8b5d9d7b09e7dc969b4ee2ea2df43e04) | `8b5d9d7b09e7dc969b4ee2ea2df43e04` | yoast-reading-time-shortcode.php | 2026-05-25 |
 | [Custom Failed Payment Retry Rules for WooCommerce Subscriptions](https://gist.github.com/af0992e56021f1bda39f10687290f6e3) | `af0992e56021f1bda39f10687290f6e3` | woo-subscription-custom-failed-payment-retry-rules.php | 2026-04-28 |
 | [Add Parent ID to the Renewal orders of the Subscriptions](https://gist.github.com/f28dbd4165fb9621680c3f1f3c7d8317) | `f28dbd4165fb9621680c3f1f3c7d8317` | woo-subscription-add-parent-id-to-renewal-orders.php | 2026-04-28 |
 | [Extend WooCommerce admin order search with custom meta fields.](https://gist.github.com/4b8182dcfa39a35cc440690293b64657) | `4b8182dcfa39a35cc440690293b64657` | custom-meta-fields-woo-admin-order-search.php | 2026-04-28 |
