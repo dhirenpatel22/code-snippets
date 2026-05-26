@@ -1,0 +1,5 @@
+Gist ID:     8b5d9d7b09e7dc969b4ee2ea2df43e04
+Description: Yoast SEO Reading Time Shortcode
+URL:         https://gist.github.com/8b5d9d7b09e7dc969b4ee2ea2df43e04
+Updated at:  2026-05-25T12:10:08Z
+Files:       yoast-reading-time-shortcode.php
