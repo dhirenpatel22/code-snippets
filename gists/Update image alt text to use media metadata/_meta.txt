@@ -1,0 +1,5 @@
+Gist ID:     ae059b41bd0f210a4de0a81d65654aa5
+Description: Update image alt text to use media metadata
+URL:         https://gist.github.com/ae059b41bd0f210a4de0a81d65654aa5
+Updated at:  2026-07-19T06:17:05Z
+Files:       update-image-alt.php
