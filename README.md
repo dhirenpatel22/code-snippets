@@ -46,7 +46,6 @@
 | [301 Redirections in OpenCart](https://gist.github.com/ec8230cb420e83f3599abbb8b21760a8) | `ec8230cb420e83f3599abbb8b21760a8` | redirect.txt | 2019-06-03 |
 | [Using Pardot and Formidable](https://gist.github.com/d04465f3d25d667282406e4552a9e472) | `d04465f3d25d667282406e4552a9e472` | pardot-formidable.php | 2019-05-30 |
 | [Display errors using url parameters](https://gist.github.com/0b03bec2cca68e104ebab6b948996da2) | `0b03bec2cca68e104ebab6b948996da2` | display-error.php | 2019-05-06 |
-| [_No description_](https://gist.github.com/64ac4a3f4b2e314adca43dc7b0b347b3) | `64ac4a3f4b2e314adca43dc7b0b347b3` | create-new-admin.php | 2019-04-01 |
 | [Function to add custom responsive image size for custom post types and Advance Custom Fields](https://gist.github.com/7832463f3883ddce3745f1a3787eece6) | `7832463f3883ddce3745f1a3787eece6` | responsive-src.php | 2019-01-12 |
 | [Set Default Term of the Custom Taxonomy for the Custom Post Type](https://gist.github.com/661d5919ed185e524a77558f5fdece4b) | `661d5919ed185e524a77558f5fdece4b` | default-term.php | 2019-01-10 |
 | [Code to change url of Blog posts](https://gist.github.com/1b83e67829c88305374854208170f209) | `1b83e67829c88305374854208170f209` | Code to change url of Blog posts | 2018-10-03 |
